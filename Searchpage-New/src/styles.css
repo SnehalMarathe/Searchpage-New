@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+
+html{
+    font-family: 'Roboto', sans-serif;
+    background-color: #EEF1F3;
+    overflow: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, app-root, .h-full-height{
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+  }
+  .clearfix:after {
+    clear: both;
+  }
+.bold-text{
+    font-weight:600;
+}
+.example-spacer {
+flex: 1 1 auto;
+}
+.mat-toolbar {
+    min-height: 56px!important;
+    transition: left .3s;    
+    height: 56px!important;
+    background-color: #365874!important;	
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2)!important;
+    box-sizing: border-box;
+    color: #fff;
+    z-index: 101;  
+    padding:8px 16px!important; 
+}
+.mat-toolbar-row{
+    height:40px!important;
+}

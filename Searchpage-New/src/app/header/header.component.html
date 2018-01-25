@@ -1,0 +1,57 @@
+<mat-toolbar>
+
+  <button type="button" class="burger-menu-btn">
+    <i class="material-icons material-spec-icon" title="Show navigation">menu</i>
+  </button>
+
+
+  <div class="header__logo">
+    <img src="https://mediaservices.viacom.com/Content/images/vms-header-logo.png?version=2017.7.25.1" />
+  </div>
+  <span class="example-spacer"></span>
+  <ul class="unstyled-list clearfix">
+    <li class="header__search">
+      <ul class=" unstyled-list clearfix">
+        <li class="header__search__search-box clearfix">
+          <a href="javascript:;">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </a>
+          <form id="search-form">
+            <input type="search" placeholder="Enter Barcode, DSID or any search term..." id="search-query" name="search-query" autocomplete="on"
+              onfocus="this.placeholder = ''" onblur="this.placeholder='Enter Barcode, DSID or any search term...' ">
+          </form>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <ul class="header__rt-menu-items ">
+    <!---->
+    <li>
+      <a href="#">
+        <i class="fa fa-th" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-bell" aria-hidden="true"></i>
+        <span class="topbar-badge animated rubberBand">5</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        
+       
+        <button mat-button [matMenuTriggerFor]="menu" class="user-dropdown"> <span class="user-pic"> <img src="assets/images/user-icon.png"> </span> <span class="username"> Alexandra </span> <i class="fa fa-sort-desc " aria-hidden="true"></i></button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>User Preference</button>
+          <button mat-menu-item>Logout</button>
+        </mat-menu>
+      </a>
+    </li>
+  </ul>
+
+</mat-toolbar>
+<mat-menu #appMenu="matMenu">
+  <button mat-menu-item> Settings </button>
+  <button mat-menu-item> Contact </button>
+</mat-menu>
